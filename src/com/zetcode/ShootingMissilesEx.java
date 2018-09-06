@@ -1,20 +1,19 @@
 package com.zetcode;
 
 import java.awt.EventQueue;
-
 import javax.swing.JFrame;
 
-public class MovingSprite extends JFrame {
+public class ShootingMissilesEx extends JFrame {
 	private static final long serialVersionUID = 1L;
 
-	public MovingSprite() {
+	public ShootingMissilesEx() {
 		initUI();
 	}
 
 	private void initUI() {
 		add(new Board());
 
-		setTitle("MovingSprite");
+		setTitle("Shooting missiles");
 		setSize(400, 300);
 
 		setLocationRelativeTo(null);
@@ -24,7 +23,7 @@ public class MovingSprite extends JFrame {
 
 	public static void main(String[] args) {
 		EventQueue.invokeLater(() -> {
-			MovingSprite ex = new MovingSprite();
+			ShootingMissilesEx ex = new ShootingMissilesEx();
 			ex.setVisible(true);
 		});
 	}
