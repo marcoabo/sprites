@@ -3,27 +3,28 @@ package com.zetcode;
 import java.awt.EventQueue;
 import javax.swing.JFrame;
 
-public class ShootingMissilesEx extends JFrame {
+public class CollisionEx extends  JFrame{
 	private static final long serialVersionUID = 1L;
 
-	public ShootingMissilesEx() {
+	public CollisionEx() {
+		
 		initUI();
 	}
 
 	private void initUI() {
 		add(new Board());
 
-		setTitle("Shooting missiles");
-		setSize(400, 300);
-
-		setLocationRelativeTo(null);
 		setResizable(false);
+		pack();
+		
+		setTitle("Collision");
+		setLocationRelativeTo(null);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 
 	public static void main(String[] args) {
 		EventQueue.invokeLater(() -> {
-			ShootingMissilesEx ex = new ShootingMissilesEx();
+			CollisionEx ex = new CollisionEx();
 			ex.setVisible(true);
 		});
 	}

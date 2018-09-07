@@ -29,6 +29,14 @@ public class SpaceShip extends Sprite{
 		
 		x += dx;
 		y += dy;
+		
+		if (x < 1) {
+			x = 1;
+		}
+		
+		if (y < 1) {
+			y = 1;
+		}
 	}
 	
 	public List<Missile> getMissiles(){
